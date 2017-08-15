@@ -19,7 +19,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
         <H2>
           Lifestyle and design
           <br />
-          showroom suites
+          showroom suites.
         </H2>
       </NormalHeader>
     );
