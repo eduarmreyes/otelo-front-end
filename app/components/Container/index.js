@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-const DivMaxWidth = styled.div`
+const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 1040px;
+  padding-left: 37px;
 `;
 
-export default DivMaxWidth;
+export default Container;

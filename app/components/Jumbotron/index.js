@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Section from './Section';
-import DivMaxWidth from './DivMaxWidth';
+import Container from 'components/Container';
 import Ul from './Ul';
 import Li from './Li';
 import Span from './Span';
@@ -14,7 +14,7 @@ class Jumbotron extends React.Component { // eslint-disable-line react/prefer-st
   render() {
     return (
       <Section>
-        <DivMaxWidth>
+        <Container>
           <Ul>
             <Li>
               <A href="#">
@@ -33,7 +33,7 @@ class Jumbotron extends React.Component { // eslint-disable-line react/prefer-st
             </Li>
           </Ul>
           <Button>Search</Button>
-        </DivMaxWidth>
+        </Container>
       </Section>
     );
   }

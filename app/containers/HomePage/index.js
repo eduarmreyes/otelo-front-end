@@ -14,12 +14,14 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
 import Jumbotron from 'components/Jumbotron';
+import Welcome from 'components/Welcome';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
         <Jumbotron />
+        <Welcome />
       </div>
     );
   }
