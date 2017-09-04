@@ -9,12 +9,12 @@
  * the linting exception.
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
-
 import Jumbotron from 'components/Jumbotron';
 import Welcome from 'components/Welcome';
+import FeaturedStays from 'components/FeaturedStays';
+import TheNetwork from 'components/TheNetwork';
+
+import React from 'react';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -22,6 +22,8 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
       <div>
         <Jumbotron />
         <Welcome />
+        <FeaturedStays />
+        <TheNetwork />
       </div>
     );
   }

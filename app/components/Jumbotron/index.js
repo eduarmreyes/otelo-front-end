@@ -1,7 +1,7 @@
 import React from 'react';
+import Container from 'components/Container';
 
 import Section from './Section';
-import Container from 'components/Container';
 import Ul from './Ul';
 import Li from './Li';
 import Span from './Span';
