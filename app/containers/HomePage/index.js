@@ -13,6 +13,7 @@ import Jumbotron from 'components/Jumbotron';
 import Welcome from 'components/Welcome';
 import FeaturedStays from 'components/FeaturedStays';
 import TheNetwork from 'components/TheNetwork';
+import UpcomingDestinations from 'components/UpcomingDestinations';
 
 import React from 'react';
 
@@ -24,6 +25,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <Welcome />
         <FeaturedStays />
         <TheNetwork />
+        <UpcomingDestinations />
       </div>
     );
   }
