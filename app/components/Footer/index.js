@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Container from 'components/Container';
+import Contact from 'components/Contact';
 import Hr from 'components/Welcome/Hr';
 
 import Footer from './Footer';
@@ -74,6 +75,7 @@ class FeaturedStays extends React.Component { // eslint-disable-line react/prefe
               </Nav>
             </Navbar>
             <Hr />
+            <Contact />
           </Section>
         </Container>
       </Footer>
