@@ -11,16 +11,16 @@ class Navbar extends React.Component { // eslint-disable-line react/prefer-state
       <NormalNavbar>
         <Ul>
           <Li>
-            <NavbarLink to='#'>
+            <NavbarLink to="#">
               Book a Concept Suite
             </NavbarLink>
-            <NavbarLink to='#experiences'>
+            <NavbarLink to="#experiences">
               Experiences
             </NavbarLink>
-            <NavbarLink to='#the-network'>
+            <NavbarLink to="#the-network">
               The Network
             </NavbarLink>
-            <NavbarLink to='#contact'>
+            <NavbarLink to="#contact">
               Contact
             </NavbarLink>
           </Li>

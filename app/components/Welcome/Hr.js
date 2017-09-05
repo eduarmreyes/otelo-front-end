@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const Hr = styled.hr`
-  background-color: #187aff;
-  border: 0;
-  height: 1.875px;
+  background-color: ${(props) => props.primary ? '#187aff' : '#fff'};
+  border: 0.938px solid;
+  border-color: ${(props) => props.primary ? '#187aff' : '#fff'};
 `;
 
 export default Hr;

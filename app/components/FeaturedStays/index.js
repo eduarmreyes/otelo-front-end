@@ -15,7 +15,7 @@ class FeaturedStays extends React.Component { // eslint-disable-line react/prefe
             Featured Otelo Stays
           </h2>
           <FeaturedList />
-          <Hr />
+          <Hr primary />
         </Container>
       </Section>
     );

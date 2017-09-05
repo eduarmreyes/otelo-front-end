@@ -18,7 +18,7 @@ class WelcomeSection extends React.Component { // eslint-disable-line react/pref
           <P>
             Stay at a place that connects you to the most talented creators in town, a place where the space is your guide around the city. Our full service concept suites artfully blend local culture and style with the comforts and joys of a luxury hotel experience. Own the experience of Otelo and instantly greet the best of all<br />local things!
           </P>
-          <Hr />
+          <Hr primary />
         </Container>
       </Section>
     );

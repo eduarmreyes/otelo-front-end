@@ -35,7 +35,7 @@ class TheNetwork extends React.PureComponent { // eslint-disable-line react/pref
               Otelo is meant to be sharedin every way. Learn more about our income property, shared ownership program.
             </P>
           </NetworkSection>
-          <Hr />
+          <Hr primary />
         </Container>
       </Section>
     );

@@ -14,6 +14,7 @@ import Welcome from 'components/Welcome';
 import FeaturedStays from 'components/FeaturedStays';
 import TheNetwork from 'components/TheNetwork';
 import UpcomingDestinations from 'components/UpcomingDestinations';
+import Footer from 'components/Footer';
 
 import React from 'react';
 
@@ -26,6 +27,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <FeaturedStays />
         <TheNetwork />
         <UpcomingDestinations />
+        <Footer />
       </div>
     );
   }
