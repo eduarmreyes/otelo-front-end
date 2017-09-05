@@ -38,20 +38,6 @@ class FeaturedStays extends React.Component { // eslint-disable-line react/prefe
                     </Link>
                   </Li>
                   <Li>
-                    <Link to="/book-a-concept">
-                      Book a concept
-                    </Link>
-                  </Li>
-                </Ul>
-              </Nav>
-              <Nav>
-                <Ul>
-                  <Li>
-                    <Link to="/the-network">
-                      The Network
-                    </Link>
-                  </Li>
-                  <Li>
                     <Link to="/reviews">
                       Reviews
                     </Link>
@@ -61,8 +47,22 @@ class FeaturedStays extends React.Component { // eslint-disable-line react/prefe
               <Nav>
                 <Ul>
                   <Li>
+                    <Link to="/book-a-concept">
+                      Book a concept
+                    </Link>
+                  </Li>
+                  <Li>
                     <Link to="/experiences">
                       Experiences
+                    </Link>
+                  </Li>
+                </Ul>
+              </Nav>
+              <Nav>
+                <Ul>
+                  <Li>
+                    <Link to="/the-network">
+                      The Network
                     </Link>
                   </Li>
                   <Li>
