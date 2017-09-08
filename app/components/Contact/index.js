@@ -12,6 +12,10 @@ import IconsWrapper from './IconsWrapper';
 import FormWrapper from './FormWrapper';
 import Input from './Input';
 import Textarea from './Textarea';
+import InfoWrapper from './InfoWrapper';
+import SpanInfo from './SpanInfo';
+import Button from './Button';
+import SectionMark from './SectionMark';
 
 class Contact extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -41,8 +45,24 @@ class Contact extends React.Component { // eslint-disable-line react/prefer-stat
             <Input type="email" placeholder="EMAIL" />
             <Textarea columns="600" placeholder="COMMENTS">
             </Textarea>
+            <Button>
+              SUBMIT
+            </Button>
           </form>
         </FormWrapper>
+        <InfoWrapper>
+          <SpanInfo>
+            info@otelo.com
+          </SpanInfo>
+          <SpanInfo>
+            1-800 373-3782
+            <br />
+            CR + 506 4635-2781
+          </SpanInfo>
+        </InfoWrapper>
+        <SectionMark>
+          &copy; Otelo Group LTDA
+        </SectionMark>
       </Section>
     );
   }
