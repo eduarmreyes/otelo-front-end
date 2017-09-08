@@ -22,7 +22,7 @@ class Contact extends React.Component { // eslint-disable-line react/prefer-stat
     return (
       <Section>
         <P>
-          Leave us two message!
+          Leave us a message!
         </P>
         <IconsWrapper>
           <Span>
