@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Container from 'components/Container';
-import Contact from 'components/Contact';
 import Hr from 'components/Welcome/Hr';
+import Contact from 'containers/Contact';
 
 import Footer from './Footer';
 import OteloLogoWhite from './OteloLogoWhite';

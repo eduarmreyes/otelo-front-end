@@ -1,23 +1,24 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import FaInstagram from 'react-icons/lib/fa/instagram';
 import FaSnapchatGhost from 'react-icons/lib/fa/snapchat-ghost';
 import FaFacebook from 'react-icons/lib/fa/facebook';
 import FaTwitter from 'react-icons/lib/fa/twitter';
+import { sendContact } from './actions';
 
 import Section from './Section';
 import P from './P';
 import Span from './Span';
 import IconsWrapper from './IconsWrapper';
 import FormWrapper from './FormWrapper';
-import Input from './Input';
-import Textarea from './Textarea';
 import InfoWrapper from './InfoWrapper';
 import SpanInfo from './SpanInfo';
-import Button from './Button';
 import SectionMark from './SectionMark';
+import ContactForm from './ContactForm';
 
-class Contact extends React.Component { // eslint-disable-line react/prefer-stateless-function
+
+export class Contact extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <Section>
@@ -39,16 +40,7 @@ class Contact extends React.Component { // eslint-disable-line react/prefer-stat
           </Span>
         </IconsWrapper>
         <FormWrapper>
-          <form>
-            <Input type="text" placeholder="NAME" />
-            <Input type="text" placeholder="LAST NAME" />
-            <Input type="email" placeholder="EMAIL" />
-            <Textarea columns="600" placeholder="COMMENTS">
-            </Textarea>
-            <Button>
-              SUBMIT
-            </Button>
-          </form>
+          <ContactForm onSubmit={this.props.onSubmitForm} />
         </FormWrapper>
         <InfoWrapper>
           <SpanInfo>
@@ -68,4 +60,23 @@ class Contact extends React.Component { // eslint-disable-line react/prefer-stat
   }
 }
 
-export default Contact;
+Contact.propTypes = {
+  name: React.PropTypes.string,
+  lastName: React.PropTypes.string,
+  email: React.PropTypes.string,
+  message: React.PropTypes.string,
+  onSubmitForm: React.PropTypes.func,
+};
+
+export function mapDispatchToProps(dispatch) {
+  return {
+    onSubmitForm: (values) => {
+      dispatch(sendContact(values, () => {
+        console.log('Finished');
+      }));
+    },
+  };
+}
+
+// Wrap the component to inject dispatch and state into it
+export default connect(null, mapDispatchToProps)(Contact);

@@ -5,10 +5,6 @@ const Input = styled.input`
   height: 45px;
   padding: 10px;
   width: 180px;
-
-  &:nth-child(2) {
-    margin: auto 16px 24px 16px;
-  }
 `;
 
 export default Input;
