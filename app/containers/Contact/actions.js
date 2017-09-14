@@ -31,7 +31,7 @@ const ROOT_URL = 'https://otelo-api.herokuapp.com';
  */
 export function sendContact(values, callback) {
   const request = axios.post(`${ROOT_URL}/contact`, values)
-    .then(() => callback);
+    .then(() => callback());
   return {
     type: SEND_CONTACT,
     payload: request,

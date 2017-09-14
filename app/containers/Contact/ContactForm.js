@@ -52,7 +52,12 @@ const renderTextarea = ({ input, placeholder, name, type, meta: { touched, error
 const ContactForm = (props) => {
   const { handleSubmit } = props;
   return (
-    <form onSubmit={handleSubmit} noValidate>
+    <form
+      id="contact-form"
+      name="contact-form"
+      onSubmit={handleSubmit}
+      noValidate
+    >
       <Field
         type="text"
         placeholder="NAME"

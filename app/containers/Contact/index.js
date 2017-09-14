@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { reset } from 'redux-form';
 
 import FaInstagram from 'react-icons/lib/fa/instagram';
 import FaSnapchatGhost from 'react-icons/lib/fa/snapchat-ghost';
@@ -72,7 +73,7 @@ export function mapDispatchToProps(dispatch) {
   return {
     onSubmitForm: (values) => {
       dispatch(sendContact(values, () => {
-        console.log('Finished');
+        dispatch(reset('contact-form'));
       }));
     },
   };
